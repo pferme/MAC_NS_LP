@@ -247,7 +247,7 @@ with Model("S") as S:
         S.setSolverParam("log",1)
         print("Mosek Log\n>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<\n")
 
-    # Résolution
+    # Resolution
     S.solve()
     result = S.primalObjValue()
     if verbose:
